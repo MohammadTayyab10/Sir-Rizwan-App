@@ -21,9 +21,9 @@ const CitySelectBox = () => {
         option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
       }
     >
-      <Option value="jack">Karachi</Option>
-      <Option value="lucy">Lahore</Option>
-      <Option value="tom">Quetta</Option>
+      <Option value="karachi">Karachi</Option>
+      <Option value="lahore">Lahore</Option>
+      <Option value="quetta">Quetta</Option>
     </Select>
   );
 };

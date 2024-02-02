@@ -1,3 +1,4 @@
+import { number } from "joi";
 import mongoose from "mongoose";
 
 
@@ -5,6 +6,7 @@ const RegistrationSchema = new mongoose.Schema({
     fullName: String,
     fatherName: String,
     email: String,
+    rollNo:String,
     city: String,
     cnic:String,
     phone:String,

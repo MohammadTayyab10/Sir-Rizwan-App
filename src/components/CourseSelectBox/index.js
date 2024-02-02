@@ -21,8 +21,8 @@ const CourseSelectBox = () => {
         option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
       }
     >
-      <Option style={{ width: 200 }} value="ai">AI</Option>
       <Option style={{ width: 200 }} value="web">Web & App Development</Option>
+      <Option style={{ width: 200 }} value="ai">AI</Option>
       <Option style={{ width: 200 }} value="graphic">Graphic Designing</Option>
       <Option style={{ width: 200 }} value="bs-manage">Businees Management</Option>
       <Option style={{ width: 200 }} value="dg-market">Digital Marketing</Option>

@@ -1,23 +1,23 @@
-import { options } from "joi";
 
+import React, { useState } from 'react';
 
+const SelectComponent = ({ label, options, value, onChange }) => {
+  return (
+    <div className="mb-4" style={{ marginTop:"-33px"}}>
+      <label className="block font-medium text-gray-600 ml-3 mb-0 lg:mt-4 mx:mt-4 md:mt-4 mt-8">{label}</label>
+      <select
+        value={value}
+        onChange={onChange}
+        className="appearance-none border  focus:border-blue-500 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+      >
+        {options.map((option) => (
+          <option key={option.id} value={option.id}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
 
-
-
-export default function SelectComponent({ label, onChange, value, options = [], }) {
-    return (
-        <div className="h-5">
-            <p className="pt-0 pr-2 pb-0 pl-2 mt-[-20px] mr-0 mb-0 ml-2 font-medium text-gray-600 bg-white">{label}</p>
-            <select
-                value={value}
-                onChange={onChange}
-                className="border focus:outline-none focus:border-black w-full placeholder-gray-400 text-base block bg-white pt-4 pr-4 pb-4 pl-4 mt-0 mr-0 ml-0 border-gary-300 rounded-md h-4"
-            >
-                {
-                    options && options.length ? (options.map((optionItem) => (<option id={optionItem.id} value={optionItem.id} key={optionItem.id}> {optionItem.label}</option>))) : (<option id="" value={''}></option>
-                    )}
-
-            </select>
-        </div>
-    )
-}
+export default SelectComponent;

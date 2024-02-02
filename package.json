@@ -12,11 +12,17 @@
     "@ant-design/icons": "^5.2.6",
     "antd": "^5.13.2",
     "firebase": "^10.7.2",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.1",
+    "html2pdfmake": "^0.0.10",
     "joi": "^17.12.0",
-    "mongoose": "^8.1.0",
+    "jspdf": "^2.5.1",
+    "mongoose": "^8.1.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-modal": "^3.16.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
