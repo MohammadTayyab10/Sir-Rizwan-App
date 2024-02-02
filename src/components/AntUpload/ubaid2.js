@@ -32,11 +32,11 @@ function ImageUploadComponent() {
     >
       {selectedImage ? (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src={URL.createObjectURL(selectedImage)} alt="Uploaded Image" style={{ width: '400px', height: '300px', borderRadius: "20px",
+          <img src={URL.createObjectURL(selectedImage)} alt="Uploaded Image" style={{ width: '400px', height: '300px', borderRadius: "10px", border: "5px solid black",
           }} />
         </div>
       ) : (
-        <div style={{ color: 'black', fontSize: '18px', marginBottom: '10px' }}>
+        <div style={{ color: '#ccc', fontSize: '18px', marginBottom: '10px' }}>
         Upload Your Payment Pic
          </div>
       )}
