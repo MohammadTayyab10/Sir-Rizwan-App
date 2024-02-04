@@ -20,19 +20,20 @@ function ImageUploadComponent() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '400px',
-        height: '300px',
+        width: '325px',
+        height: '200px',
         border: '3px dashed #ccc',
         cursor: 'pointer',
         backgroundColor: "white",
         borderRadius: "10px",
+        position: "relative", 
 
       }}
       onClick={() => document.getElementById('imageInput').click()}
     >
       {selectedImage ? (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src={URL.createObjectURL(selectedImage)} alt="Uploaded Image" style={{ width: '400px', height: '300px', borderRadius: "10px", border: "5px solid black",
+          <img src={URL.createObjectURL(selectedImage)} alt="Uploaded Image" style={{ width: '325px', height:"200px", objectFit: 'cover' , borderRadius: "10px",
           }} />
         </div>
       ) : (

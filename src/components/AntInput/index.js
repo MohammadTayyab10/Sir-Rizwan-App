@@ -16,10 +16,10 @@ const AntInputComponent = ({placeholder}) => {
       style={{
        //backgroundColor: "	#C0C0C0",
          backgroundColor: "white",
-         width: "350px",
-         height: "40px",
-         borderRadius: "10px",
-         fontSize: "22px",
+         width: "320px",
+         height: "33px",
+        //  borderRadius: "10px",
+         fontSize: "15px",
       }}
     //   onChange={onChange}
     //   value={value}

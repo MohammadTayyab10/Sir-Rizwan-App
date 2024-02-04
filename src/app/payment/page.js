@@ -17,11 +17,11 @@ export default function PaymentVerify() {
       flexDirection: "column",
       margin: "0 auto",
       width: "400px",
-      height: "800px",
+      height: "600px",
       marginTop: "35px",
       boxShadow: "1px 5px 5px 8px rgba(0.2, 0.2, 0.2, 0.2)",
       // boxShadow: '5px 0px 1px 12px rgba(0, 0, 0, 0.1)',
-      // maxWidth: "600px",
+      maxWidth: "600px",
 
       // marginLeft: "200px"
     },
@@ -41,10 +41,13 @@ export default function PaymentVerify() {
       {/* <h1 style={{color: "blue", fontSize: "30px", fontWeight: "bolder", marginLeft: "50px", }}>Payment Verify</h1> */}
 
       <div
-        style={{ boxShadow: "5px 0px 1px 12px rgba(0, 0, 0, 0.1)" }}
+        // style={{ boxShadow: "5px 0px 1px 12px rgba(0, 0, 0, 0.1)" }}
+        style={{ boxShadow: "0px -5px 1px 12px rgba(0, 0, 0, 0.1)" }}
+
+
         className="items-center justify-between mt-8 w-full bg-[#248ba5] lg:h-16 md:h-16 mx:h-16 lg:text-4xl md:text-4xl mx:text-4xl text-white flex items-center justify-center text-2xl xs:text-1xl text-[20px] font-bold h-12"
       >
-        <p style={{alignItems: "center"}} className="lg:pl-[30%] md:pl-[12%] mx:pl-[20%]  ml-6">
+        <p style={{alignItems: "center", marginLeft: "80px",}} className="lg:pl-[30%] md:pl-[12%] mx:pl-[20%]  ml-6">
           Payment Verify Form
         </p>
       </div>
@@ -56,7 +59,7 @@ export default function PaymentVerify() {
             marginTop: "10px",
             //  backgroundColor: "white",
           }}
-          className="space-y-5 mx-auto"
+          className="space-y-3 mx-auto"
         >
           <div style={{ marginTop: "5px" }}>
             <p style={{ fontSize: "15px", marginLeft: "20px" }}>Name</p>
@@ -94,8 +97,8 @@ export default function PaymentVerify() {
           </div>
         </div>
         
-        <Button style={{ backgroundColor: "blue", fontSize: "15px", color: "white",
-        width:"350px", height: "60px", margin: "0 auto", marginTop: "10px", borderRadius: "50px"
+        <Button style={{ backgroundColor: "#248ba5", fontSize: "20px", fontWeight: 500,
+        color: "white", textAlign: "center", width:"300px", justifyContent :"center",height: "40px", margin: "0 auto", marginTop: "20px", borderRadius: "50px"
          }}>Submit</Button>
       </div>
     </>
