@@ -1,14 +1,12 @@
 // AntInputComponent.js
+
+"use client";
+
 import React from 'react';
 import { Input } from 'antd';
 
-const AntInputComponent = ({placeholder}) => {
-  // const styles = {
-  //   placeholder: {
-  //     fontSize: "16px",  // Adjust the font size for the placeholder
-  //   },
-  // };
-
+const AntInputComponent = ({placeholder , style}) => {
+ 
   return (
     <Input
       placeholder={placeholder || "Enter Name"}
@@ -20,6 +18,7 @@ const AntInputComponent = ({placeholder}) => {
          height: "33px",
         //  borderRadius: "10px",
          fontSize: "15px",
+         ...style,
       }}
     //   onChange={onChange}
     //   value={value}

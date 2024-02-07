@@ -65,21 +65,21 @@ export default function PaymentVerify() {
             <p style={{ fontSize: "15px", marginLeft: "20px" }}>Name</p>
             <AntInputComponent
               placeholder={"Enter Name"}
-              style={styles.inputs}
+              // style={styles.inputs}
             />
           </div>
           <div>
             <p style={{ fontSize: "15px", marginLeft: "20px" }}>Roll No</p>
             <AntInputComponent
               placeholder={"Enter Roll No."}
-              style={styles.inputs}
+              // style={styles.inputs}
             />
           </div>
           <div>
             <p style={{ fontSize: "15px", marginLeft: "20px" }}>Course</p>
             <AntInputComponent
               placeholder={"Enter Course"}
-              style={styles.inputs}
+              // style={styles.inputs}
             />
           </div>
           <div>
@@ -87,7 +87,7 @@ export default function PaymentVerify() {
 
             <AntInputComponent
               placeholder={"Enter Batch"}
-              style={styles.inputs}
+              // style={styles.inputs}
             />
           </div>
 
